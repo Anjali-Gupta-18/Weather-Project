@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add City</button>
+    </form>
+    <h2>City Weather Data</h2>
+    <ul>
+        {% for weather in weather_info %}
+            <li>{{ weather.city.name }}: {{ weather.temperature }}°C, {{ weather.description }} (Last updated: {{ weather.last_updated }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
