@@ -19,7 +19,7 @@ The City Weather Tracker application provides real-time weather data for various
 To set up the City Weather Tracker, follow these steps:
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/city-weather-tracker.git
+   git clone https://github.com/Anjali-Gupta-18/Weather-Project
    cd city-weather-tracker
 2. Create a virtual environment and activate it:
     python -m venv venv
